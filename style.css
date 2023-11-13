@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 98.9vw;
+    background-color: rgb(211, 189, 156);
+}
+#sitename{padding-top: 1vw; padding-bottom: 1vw;}
+.navlinks{
+    text-decoration: none;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+section{
+    display: flex;
+    border: 1px solid black;
+    height: 85vh;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+/**ladscape screen**/
+@media screen and(max-width: 720px){
+    nav{
+        background-color: rgb(151, 230, 230);
+    }
+}
+/**square tablets**/
+@media screen and(max-width: 640px){
+    nav{
+        background-color: rgb(218, 185, 155)4)255, 123, 0);
+    }
+}
+/**some tablets**/
+@media screen and(max-width: 600px){
+    nav{
+        background-color: rgb(159, 231, 181);
+    }
+}
+/**fully mobile**/
+@media screen and(max-width: 480px){
+    nav{
+        background-color: rgb(212, 119, 224);
+    }
+}
