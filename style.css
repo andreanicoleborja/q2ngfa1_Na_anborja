@@ -16,12 +16,6 @@ nav{
     padding-top: 1vw;
     padding-bottom: 1vw;
 }
-section{
-    display: flex;
-    border: 1px solid black;
-    justify-content:space-around;
-    flex-wrap: wrap;
-}
 .icon{
     background: url(../media/sprite3.png) no-repeat;
     width: 66px;
