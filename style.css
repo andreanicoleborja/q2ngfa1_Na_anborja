@@ -2,47 +2,77 @@
     margin: 0;
 }
 
+body{
+    display: flex;
+    flex-direction:column;
+    justify-items: space-between;
+}
+a{text-decoration: none;color:#000000 ;}
+.links a{margin-left: 1vw;}
 nav{
     display: flex;
-    justify-content: space-evenly;
-    width: 98.9vw;
-    background-color: rgb(211, 189, 156);
-}
-#sitename{padding-top: 1vw; padding-bottom: 1vw;}
-.navlinks{
-    text-decoration: none;
+    background-color: #A0CED9;
+    justify-content: space-around;
     padding-top: 1vw;
     padding-bottom: 1vw;
 }
-
 section{
     display: flex;
     border: 1px solid black;
-    height: 85vh;
     justify-content:space-around;
     flex-wrap: wrap;
 }
-/**ladscape screen**/
-@media screen and(max-width: 720px){
-    nav{
-        background-color: rgb(151, 230, 230);
-    }
+.icon{
+    background: url(../media/sprite3.png) no-repeat;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
 }
-/**square tablets**/
-@media screen and(max-width: 640px){
-    nav{
-        background-color: rgb(218, 185, 155)4)255, 123, 0);
-    }
+#twitter{
+    background-position: -66px -72px;
 }
-/**some tablets**/
-@media screen and(max-width: 600px){
-    nav{
-        background-color: rgb(159, 231, 181);
-    }
+#facebook{
+    background-position: -439px -146px;
 }
-/**fully mobile**/
-@media screen and(max-width: 480px){
+#youtube{
+    background-position: -439px -221px;
+}
+#pinterest{
+    background-position:-141px -221px;
+}
+@media screen and (max-width: 600px){
     nav{
-        background-color: rgb(212, 119, 224);
+        position: relative;
+        background-color: #4F517D;
+    }
+    .pagetitle{
+        color: #e2ecec ;
+        background-color: #A997DF;
+        padding: 1vw;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: #DCCFEC;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        min-width: 100vw;
+        
+    }
+    .links a{
+        color: #000000;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        display: block;
+    }
+    .links a:hover{
+        background-color: #DDC4DD;
+        transition: .3s;
+    }
+    nav:hover .links{
+        display: block;
+    }
+    nav:hover .pagetitle{
+        background-color: #a89ba8;
     }
 }
